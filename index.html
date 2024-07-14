@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyle Company Growth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <div class="contact-container">
+            <div class="contact-details">
+                <h2 class="contact-title">AWARD WINNING</h2>
+                <h1>DIGITAL EXPENSE MANAGEMENT</h1>
+                <p class="contact-description">At Fyle, we simplify expense management with our cutting-edge solutions, designed to provide seamless and efficient operations. Join us and experience the best in expense management.</p>
+                <button id="contact-us-btn">CONTACT US</button>
+            </div>
+            <img src="fyle.jpg" alt="Contact Image" class="contact-image">
+        </div>
+        <div id="contact-form-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h3>Talk to Us</h3>
+                <form action="https://getform.io/f/akkgkmra" method="POST">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    <label for="work-email">Work Email:</label>
+                    <input type="email" id="work-email" name="work-email" required>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the terms and conditions
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="what-we-do">
+        <h2 class="section-title">WHAT WE DO</h2>
+        <div class="services-container">
+            <div class="services-text">
+                <h3>SERVICES PROVIDE FOR YOU</h3>
+                <p>At Fyle, we offer comprehensive expense management solutions that cater to businesses of all sizes. Our services ensure efficient tracking, reporting, and management of expenses, helping companies save time and money.</p>
+            </div>
+            <div class="services-slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="https://i.ytimg.com/vi/f3tPXAqvrek/hqdefault.jpg" alt="Expense Tracking">
+                    </div>
+                    <div class="slide">
+                        <img src="service2.jpg" alt="Reporting">
+                    </div>
+                    <div class="slide">
+                        <img src="service3.jpg" alt="Policy Enforcement">
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Project Section -->
+    <section id="our-project">
+        <h2 class="section-title">OUR PROJECT</h2>
+        <h1 class="section-heading">WHY WE ARE BEST</h1>
+        <div class="project-container">
+            <img id="project-image" src="seamless.jpg" alt="Project Image" class="project-image">
+            <div class="project-texts">
+                <div class="project-text" id="project-text-1" onclick="changeImage('seamless.jpg', this)">
+                    <h3>Seamless Integration</h3>
+                    <p>Fyle integrates seamlessly with various accounting software, providing a smooth and efficient workflow for your business.</p>
+                </div>
+                <div class="project-text" id="project-text-2" onclick="changeImage('Realtime-Analytics.png', this)">
+                    <h3>Real-time Analytics</h3>
+                    <p>Get real-time insights into your company's expenses, helping you make informed financial decisions quickly and accurately.</p>
+                </div>
+                <div class="project-text" id="project-text-3" onclick="changeImage('connect.jpg', this)">
+                    <h3>Comprehensive Support</h3>
+                    <p>Our dedicated support team is always ready to assist you with any issues, ensuring a hassle-free experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Growth Section -->
+    <section id="company-growth">
+        <h2 class="section-title">EXPERTS GROWTH</h2>
+        <h1 class="section-heading">OUR COMPANY GROWTH</h1>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">&#10084;</div>
+                <div class="card-number">500 +</div>
+                <div class="card-text">Satisfied Customers</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">&#128337;</div>
+                <div class="card-number">3650 +</div>
+                <div class="card-text">Days Of Operation</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">&#10004;</div>
+                <div class="card-number">1000 +</div>
+                <div class="card-text">Complete Projects</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">&#127942;</div>
+                <div class="card-number">150 +</div>
+                <div class="card-text">Awards Won</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

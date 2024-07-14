@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff; /* Light text color */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+section {
+    margin-bottom: 70px; /* Increase space between sections */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Ensure this container is positioned */
+    z-index: 1; /* Lower z-index than popup */
+}
+
+.contact-details {
+    max-width: 600px;
+}
+
+.contact-title {
+    color: #ff6347; /* Use a shade of red that stands out against dark background */
+    font-weight: bold;
+}
+
+.contact-description {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.contact-image {
+    max-width: 60%;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #ff6347; /* Button color matching the title */
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff4500; /* Darker shade of red for hover effect */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the popup is above other elements */
+}
+
+.popup-content {
+    background-color: #1e1e1e; /* Slightly lighter dark background for popup */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    color: #e0e0e0; /* Light text color for popup */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff; /* Light color for close button */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #ffffff; /* Light text color for labels */
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid #444444; /* Dark border for inputs */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #1e1e1e; /* Dark background for inputs */
+    color: #e0e0e0; /* Light text color for inputs */
+}
+
+button[type="submit"] {
+    background-color: #ff6347;
+    color: #121212;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff4500;
+}
+
+#what-we-do {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensure this container is positioned */
+    z-index: 1; /* Lower z-index than popup */
+}
+
+.services-text {
+    max-width: 400px;
+}
+
+.services-text p {
+    line-height: 1.6;
+}
+
+.services-slider {
+    position: relative;
+    width: 70%;
+    max-width: 600px;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #444444; /* Dark dots */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ffffff; /* Light color for active dot */
+}
+
+#our-project {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1e1e1e; /* Slightly lighter dark background for section */
+}
+
+.section-title {
+    color: #ff6347; /* Light text color */
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    margin: 10px 0 30px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-image {
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-text {
+    background-color: #292929; /* Dark background for project text */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #e0e0e0; /* Light text color */
+}
+
+.project-text:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-text h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.project-text p {
+    margin: 0;
+    color: #aaaaaa; /* Slightly lighter text color */
+}
+
+.project-text.active {
+    background-color: #373737; /* Change background color when active */
+    color: #ffffff; /* Change text color when active */
+}
+
+#company-growth {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+}
+
+.section-title {
+    color: #ff6347; /* Light text color */
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    margin: 10px 0 30px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #292929; /* Dark background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #e0e0e0; /* Light text color */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.card-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #aaaaaa; /* Slightly lighter text color */
+}
